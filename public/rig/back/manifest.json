@@ -1,0 +1,88 @@
+{
+ "width": 1536,
+ "height": 1536,
+ "view": "back",
+ "layers": [
+  {
+   "name": "footwear-l",
+   "file": "00_footwear-l.png",
+   "x": 623,
+   "y": 1425,
+   "w": 120,
+   "h": 67,
+   "added": true
+  },
+  {
+   "name": "footwear-r",
+   "file": "01_footwear-r.png",
+   "x": 786,
+   "y": 1426,
+   "w": 119,
+   "h": 66,
+   "added": true
+  },
+  {
+   "name": "legwear",
+   "file": "02_legwear.png",
+   "x": 609,
+   "y": 1086,
+   "w": 310,
+   "h": 364,
+   "added": false
+  },
+  {
+   "name": "handwear-r",
+   "file": "03_handwear-r.png",
+   "x": 462,
+   "y": 848,
+   "w": 144,
+   "h": 230,
+   "added": false
+  },
+  {
+   "name": "handwear-l",
+   "file": "04_handwear-l.png",
+   "x": 924,
+   "y": 847,
+   "w": 147,
+   "h": 228,
+   "added": false
+  },
+  {
+   "name": "tail",
+   "file": "05_tail.png",
+   "x": 800,
+   "y": 1007,
+   "w": 350,
+   "h": 304,
+   "added": false
+  },
+  {
+   "name": "topwear",
+   "file": "06_topwear.png",
+   "x": 525,
+   "y": 845,
+   "w": 483,
+   "h": 337,
+   "added": false
+  },
+  {
+   "name": "back hair",
+   "file": "07_back_hair.png",
+   "x": 386,
+   "y": 39,
+   "w": 718,
+   "h": 1014,
+   "added": false
+  },
+  {
+   "name": "headwear",
+   "file": "08_headwear.png",
+   "x": 485,
+   "y": 286,
+   "w": 54,
+   "h": 115,
+   "added": false
+  }
+ ]
+}

@@ -1,0 +1,162 @@
+{
+  "name": "tilt",
+  "label": "歪头",
+  "weight": 1,
+  "layer": "head",
+  "facing": "front",
+  "duration": 2.4,
+  "fadeIn": 0.1,
+  "fadeOut": 0.3,
+  "tracks": {
+    "roll": {
+      "mode": "add",
+      "keys": [
+        [
+          0,
+          0,
+          "back"
+        ],
+        [
+          0.35,
+          0.13,
+          "linear"
+        ],
+        [
+          1.9,
+          0.13,
+          "easeInOut"
+        ],
+        [
+          2.4,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "pitch": {
+      "mode": "add",
+      "keys": [
+        [
+          0,
+          0,
+          "easeInOut"
+        ],
+        [
+          0.35,
+          -0.03,
+          "linear"
+        ],
+        [
+          1.9,
+          -0.03,
+          "easeInOut"
+        ],
+        [
+          2.4,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "eyeY": {
+      "mode": "set",
+      "keys": [
+        [
+          0,
+          0,
+          "easeOut"
+        ],
+        [
+          0.3,
+          -0.5,
+          "linear"
+        ],
+        [
+          1.9,
+          -0.5,
+          "easeInOut"
+        ],
+        [
+          2.4,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "lean": {
+      "mode": "add",
+      "keys": [
+        [
+          0,
+          0,
+          "easeInOut"
+        ],
+        [
+          0.4,
+          0.015,
+          "linear"
+        ],
+        [
+          1.9,
+          0.015,
+          "easeInOut"
+        ],
+        [
+          2.4,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "mouth": {
+      "mode": "set",
+      "keys": [
+        [
+          0,
+          1,
+          "step"
+        ],
+        [
+          0.3,
+          3,
+          "step"
+        ],
+        [
+          1.9,
+          1,
+          "step"
+        ],
+        [
+          2.4,
+          1,
+          "step"
+        ]
+      ]
+    },
+    "emote": {
+      "mode": "set",
+      "keys": [
+        [
+          0,
+          0,
+          "step"
+        ],
+        [
+          0.3,
+          2,
+          "step"
+        ],
+        [
+          2.0,
+          0,
+          "step"
+        ],
+        [
+          2.4,
+          0,
+          "step"
+        ]
+      ]
+    }
+  }
+}

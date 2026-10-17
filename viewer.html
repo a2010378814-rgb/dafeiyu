@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>模型查看器</title>
+  <style>
+    :root { --bg: #ffffff; --panel: #f3f1ee; --text: #2b2b2b; }
+    html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font: 13px/1.4 system-ui, sans-serif; }
+    #c { display: block; width: 100vw; height: 100vh; }
+    #ui { position: fixed; left: 8px; top: 8px; background: var(--panel); padding: 8px; border-radius: 8px; max-width: 320px; }
+    #ui button { margin: 2px; padding: 3px 8px; border: 1px solid #ccc; border-radius: 4px; background: #fff; cursor: pointer; }
+    #ui button.on { background: #dd9a64; color: #fff; border-color: #c07a4c; }
+    #ui .row { margin: 4px 0; }
+    #ui.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <div id="ui">
+    <div class="row" id="views"></div>
+    <div class="row" id="poses"></div>
+    <div class="row" id="exprs"></div>
+    <div class="row" id="status">加载中…</div>
+  </div>
+  <script type="module" src="/src/viewer.js"></script>
+</body>
+</html>

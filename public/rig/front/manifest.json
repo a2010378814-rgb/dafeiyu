@@ -1,0 +1,339 @@
+{
+ "width": 1536,
+ "height": 1536,
+ "layers": [
+  {
+   "name": "back hair",
+   "file": "00_back_hair.png",
+   "x": 415,
+   "y": 48,
+   "w": 708,
+   "h": 964,
+   "added": false
+  },
+  {
+   "name": "tail",
+   "file": "01_tail.png",
+   "x": 886,
+   "y": 1026,
+   "w": 142,
+   "h": 169,
+   "added": true
+  },
+  {
+   "name": "footwear-r",
+   "file": "02_footwear-r.png",
+   "x": 618,
+   "y": 1416,
+   "w": 120,
+   "h": 73,
+   "added": true
+  },
+  {
+   "name": "footwear-l",
+   "file": "03_footwear-l.png",
+   "x": 774,
+   "y": 1414,
+   "w": 121,
+   "h": 75,
+   "added": true
+  },
+  {
+   "name": "leg-r",
+   "file": "split_leg-r.png",
+   "x": 601,
+   "y": 1031,
+   "w": 308,
+   "h": 406,
+   "added": true,
+   "from": "legwear"
+  },
+  {
+   "name": "leg-l",
+   "file": "split_leg-l.png",
+   "x": 772,
+   "y": 1032,
+   "w": 143,
+   "h": 407,
+   "added": true,
+   "from": "legwear"
+  },
+  {
+   "name": "skirt",
+   "file": "split_skirt.png",
+   "x": 529,
+   "y": 977,
+   "w": 473,
+   "h": 172,
+   "added": true,
+   "from": "bottomwear"
+  },
+  {
+   "name": "skirt-frill",
+   "file": "split_skirt-frill.png",
+   "x": 536,
+   "y": 984,
+   "w": 460,
+   "h": 193,
+   "added": true,
+   "from": "bottomwear"
+  },
+  {
+   "name": "handwear-l",
+   "file": "06_handwear-l.png",
+   "x": 838,
+   "y": 662,
+   "w": 262,
+   "h": 387,
+   "added": false
+  },
+  {
+   "name": "handwear-r",
+   "file": "07_handwear-r.png",
+   "x": 429,
+   "y": 671,
+   "w": 246,
+   "h": 378,
+   "added": false
+  },
+  {
+   "name": "topwear",
+   "file": "09_topwear.png",
+   "x": 560,
+   "y": 599,
+   "w": 406,
+   "h": 490,
+   "added": false
+  },
+  {
+   "name": "neck",
+   "file": "08_neck.png",
+   "x": 723,
+   "y": 583,
+   "w": 79,
+   "h": 97,
+   "added": false
+  },
+  {
+   "name": "bow",
+   "file": "detail_bow.png",
+   "x": 709,
+   "y": 666,
+   "w": 99,
+   "h": 73,
+   "added": true
+  },
+  {
+   "name": "lanyard",
+   "file": "acc_lanyard.png",
+   "x": 698,
+   "y": 695,
+   "w": 129,
+   "h": 224,
+   "added": true
+  },
+  {
+   "name": "string-l",
+   "file": "acc_string-l.png",
+   "x": 680,
+   "y": 694,
+   "w": 29,
+   "h": 123,
+   "added": true
+  },
+  {
+   "name": "string-r",
+   "file": "acc_string-r.png",
+   "x": 815,
+   "y": 694,
+   "w": 28,
+   "h": 123,
+   "added": true
+  },
+  {
+   "name": "face",
+   "file": "10_face.png",
+   "x": 557,
+   "y": 194,
+   "w": 408,
+   "h": 440,
+   "added": false
+  },
+  {
+   "name": "mouth",
+   "file": "11_mouth.png",
+   "x": 736,
+   "y": 552,
+   "w": 58,
+   "h": 47,
+   "added": false
+  },
+  {
+   "name": "eyewhite-r",
+   "file": "12_eyewhite-r.png",
+   "x": 609,
+   "y": 446,
+   "w": 104,
+   "h": 101,
+   "added": false
+  },
+  {
+   "name": "eyewhite-l",
+   "file": "13_eyewhite-l.png",
+   "x": 817,
+   "y": 435,
+   "w": 102,
+   "h": 100,
+   "added": false
+  },
+  {
+   "name": "irides-l",
+   "file": "14_irides-l.png",
+   "x": 821,
+   "y": 443,
+   "w": 77,
+   "h": 93,
+   "added": false
+  },
+  {
+   "name": "highlight-l",
+   "file": "detail_highlight-l.png",
+   "x": 835,
+   "y": 453,
+   "w": 30,
+   "h": 22,
+   "added": true
+  },
+  {
+   "name": "irides-r",
+   "file": "15_irides-r.png",
+   "x": 635,
+   "y": 455,
+   "w": 74,
+   "h": 91,
+   "added": false
+  },
+  {
+   "name": "highlight-r",
+   "file": "detail_highlight-r.png",
+   "x": 649,
+   "y": 464,
+   "w": 30,
+   "h": 23,
+   "added": true
+  },
+  {
+   "name": "eyelash-l",
+   "file": "16_eyelash-l.png",
+   "x": 813,
+   "y": 421,
+   "w": 124,
+   "h": 91,
+   "added": false
+  },
+  {
+   "name": "eyelash-r",
+   "file": "17_eyelash-r.png",
+   "x": 592,
+   "y": 435,
+   "w": 120,
+   "h": 94,
+   "added": false
+  },
+  {
+   "name": "eyebrow-l",
+   "file": "18_eyebrow-l.png",
+   "x": 815,
+   "y": 357,
+   "w": 87,
+   "h": 24,
+   "added": false
+  },
+  {
+   "name": "eyebrow-r",
+   "file": "19_eyebrow-r.png",
+   "x": 612,
+   "y": 367,
+   "w": 77,
+   "h": 31,
+   "added": false
+  },
+  {
+   "name": "ear-r",
+   "file": "20_ear-r.png",
+   "x": 393,
+   "y": 403,
+   "w": 113,
+   "h": 167,
+   "added": true
+  },
+  {
+   "name": "ear-l",
+   "file": "21_ear-l.png",
+   "x": 1033,
+   "y": 395,
+   "w": 109,
+   "h": 145,
+   "added": true
+  },
+  {
+   "name": "hair-lock-l",
+   "file": "split_hair-lock-l.png",
+   "x": 477,
+   "y": 197,
+   "w": 166,
+   "h": 380,
+   "added": true,
+   "from": "front hair"
+  },
+  {
+   "name": "hair-lock-r",
+   "file": "split_hair-lock-r.png",
+   "x": 822,
+   "y": 142,
+   "w": 191,
+   "h": 617,
+   "added": true,
+   "from": "front hair"
+  },
+  {
+   "name": "hair-bang-l",
+   "file": "split_hair-bang-l.png",
+   "x": 476,
+   "y": 51,
+   "w": 538,
+   "h": 710,
+   "added": true,
+   "from": "front hair"
+  },
+  {
+   "name": "hair-center",
+   "file": "split_hair-center.png",
+   "x": 613,
+   "y": 109,
+   "w": 290,
+   "h": 379,
+   "added": true,
+   "from": "front hair"
+  },
+  {
+   "name": "hair-ahoge",
+   "file": "split_hair-ahoge.png",
+   "x": 589,
+   "y": 45,
+   "w": 170,
+   "h": 78,
+   "added": true,
+   "from": "front hair"
+  },
+  {
+   "name": "headwear",
+   "file": "23_headwear.png",
+   "x": 906,
+   "y": 279,
+   "w": 99,
+   "h": 116,
+   "added": false
+  }
+ ]
+}

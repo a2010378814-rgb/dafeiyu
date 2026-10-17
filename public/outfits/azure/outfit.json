@@ -1,0 +1,9 @@
+{
+  "name": "azure",
+  "label": "海蓝卫衣",
+  "layers": {
+    "front": { "topwear": "front.png" },
+    "side": { "topwear": "side.png" },
+    "back": { "topwear": "back.png" }
+  }
+}

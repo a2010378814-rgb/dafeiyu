@@ -1,0 +1,158 @@
+{
+ "width": 1536,
+ "height": 1536,
+ "view": "side",
+ "layers": [
+  {
+   "name": "leg-far",
+   "file": "00_leg-far.png",
+   "x": 539,
+   "y": 1041,
+   "w": 181,
+   "h": 440,
+   "added": true
+  },
+  {
+   "name": "tail",
+   "file": "01_tail.png",
+   "x": 731,
+   "y": 983,
+   "w": 340,
+   "h": 236,
+   "added": false
+  },
+  {
+   "name": "leg-near",
+   "file": "02_leg-near.png",
+   "x": 567,
+   "y": 1050,
+   "w": 181,
+   "h": 440,
+   "added": true
+  },
+  {
+   "name": "bottomwear",
+   "file": "03_bottomwear.png",
+   "x": 446,
+   "y": 975,
+   "w": 406,
+   "h": 198,
+   "added": false
+  },
+  {
+   "name": "neck",
+   "file": "04_neck.png",
+   "x": 601,
+   "y": 534,
+   "w": 86,
+   "h": 115,
+   "added": false
+  },
+  {
+   "name": "back hair",
+   "file": "05_back_hair.png",
+   "x": 466,
+   "y": 124,
+   "w": 562,
+   "h": 907,
+   "added": false
+  },
+  {
+   "name": "topwear",
+   "file": "06_topwear.png",
+   "x": 476,
+   "y": 592,
+   "w": 381,
+   "h": 495,
+   "added": false
+  },
+  {
+   "name": "arm",
+   "file": "07_arm.png",
+   "x": 610,
+   "y": 680,
+   "w": 175,
+   "h": 426,
+   "added": false
+  },
+  {
+   "name": "face",
+   "file": "08_face.png",
+   "x": 474,
+   "y": 238,
+   "w": 270,
+   "h": 373,
+   "added": false
+  },
+  {
+   "name": "ear",
+   "file": "09_ear.png",
+   "x": 700,
+   "y": 373,
+   "w": 166,
+   "h": 178,
+   "added": true
+  },
+  {
+   "name": "eyewhite",
+   "file": "10_eyewhite.png",
+   "x": 535,
+   "y": 413,
+   "w": 64,
+   "h": 96,
+   "added": false
+  },
+  {
+   "name": "eyelash",
+   "file": "11_eyelash.png",
+   "x": 526,
+   "y": 403,
+   "w": 89,
+   "h": 83,
+   "added": false
+  },
+  {
+   "name": "iris",
+   "file": "12_iris.png",
+   "x": 537,
+   "y": 422,
+   "w": 31,
+   "h": 87,
+   "added": false
+  },
+  {
+   "name": "front hair",
+   "file": "13_front_hair.png",
+   "x": 440,
+   "y": 40,
+   "w": 330,
+   "h": 703,
+   "added": false
+  },
+  {
+   "name": "headwear-cover",
+   "file": "14_headwear-cover.png",
+   "x": 599,
+   "y": 279,
+   "w": 124,
+   "h": 132,
+   "added": false
+  },
+  {
+   "name": "headwear",
+   "file": "15_headwear.png",
+   "x": 609,
+   "y": 289,
+   "w": 104,
+   "h": 112,
+   "added": false
+  }
+ ],
+ "legs": {
+  "far_shift": [
+   -28,
+   -9
+  ],
+  "far_brightness": 0.847
+ }
+}

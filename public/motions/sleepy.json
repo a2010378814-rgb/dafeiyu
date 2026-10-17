@@ -1,0 +1,307 @@
+{
+  "name": "sleepy",
+  "label": "打瞌睡",
+  "weight": 0,
+  "layer": "body",
+  "duration": 7.0,
+  "loop": [
+    4.5,
+    6.5
+  ],
+  "hold": 3,
+  "fadeIn": 0.3,
+  "fadeOut": 0.3,
+  "stopWalk": true,
+  "tracks": {
+    "blink": {
+      "mode": "max",
+      "keys": [
+        [
+          0,
+          0.35,
+          "easeInOut"
+        ],
+        [
+          2.2,
+          0.85,
+          "easeOut"
+        ],
+        [
+          2.45,
+          0.4,
+          "easeIn"
+        ],
+        [
+          2.8,
+          0.9,
+          "easeInOut"
+        ],
+        [
+          4.5,
+          1,
+          "linear"
+        ],
+        [
+          6.5,
+          1,
+          "linear"
+        ],
+        [
+          6.55,
+          1,
+          "step"
+        ],
+        [
+          6.6,
+          0,
+          "linear"
+        ],
+        [
+          7.0,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "pitch": {
+      "mode": "add",
+      "keys": [
+        [
+          0,
+          0,
+          "easeInOut"
+        ],
+        [
+          4.5,
+          0.14,
+          "easeInOut"
+        ],
+        [
+          5.5,
+          0.16,
+          "easeInOut"
+        ],
+        [
+          6.5,
+          0.14,
+          "easeOut"
+        ],
+        [
+          6.62,
+          -0.05,
+          "easeInOut"
+        ],
+        [
+          7.0,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "roll": {
+      "mode": "add",
+      "keys": [
+        [
+          0,
+          0,
+          "easeInOut"
+        ],
+        [
+          4.5,
+          0.05,
+          "linear"
+        ],
+        [
+          6.5,
+          0.05,
+          "easeOut"
+        ],
+        [
+          6.65,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "breath": {
+      "mode": "scale",
+      "keys": [
+        [
+          0,
+          1,
+          "easeInOut"
+        ],
+        [
+          4.5,
+          1.6,
+          "linear"
+        ],
+        [
+          6.5,
+          1.6,
+          "easeOut"
+        ],
+        [
+          6.7,
+          1,
+          "linear"
+        ]
+      ]
+    },
+    "bob": {
+      "mode": "add",
+      "keys": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          6.5,
+          0,
+          "easeOut"
+        ],
+        [
+          6.6,
+          -28,
+          "easeIn"
+        ],
+        [
+          6.75,
+          0,
+          "linear"
+        ],
+        [
+          7.0,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "armL": {
+      "mode": "set",
+      "keys": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          6.5,
+          0,
+          "easeOut"
+        ],
+        [
+          6.6,
+          0.4,
+          "linear"
+        ],
+        [
+          6.8,
+          0.4,
+          "easeInOut"
+        ],
+        [
+          7.0,
+          0.1,
+          "linear"
+        ]
+      ]
+    },
+    "armR": {
+      "mode": "set",
+      "keys": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          6.5,
+          0,
+          "easeOut"
+        ],
+        [
+          6.6,
+          0.4,
+          "linear"
+        ],
+        [
+          6.8,
+          0.4,
+          "easeInOut"
+        ],
+        [
+          7.0,
+          0.1,
+          "linear"
+        ]
+      ]
+    },
+    "mouth": {
+      "mode": "set",
+      "keys": [
+        [
+          0,
+          1,
+          "step"
+        ],
+        [
+          2.0,
+          0.5,
+          "step"
+        ],
+        [
+          4.5,
+          3,
+          "step"
+        ],
+        [
+          6.5,
+          2,
+          "step"
+        ],
+        [
+          6.85,
+          1,
+          "step"
+        ],
+        [
+          7.0,
+          1,
+          "step"
+        ]
+      ]
+    },
+    "emote": {
+      "mode": "set",
+      "keys": [
+        [
+          0,
+          0,
+          "step"
+        ],
+        [
+          4.5,
+          6,
+          "step"
+        ],
+        [
+          6.5,
+          1,
+          "step"
+        ],
+        [
+          6.95,
+          0,
+          "step"
+        ],
+        [
+          7.0,
+          0,
+          "step"
+        ]
+      ]
+    }
+  }
+}

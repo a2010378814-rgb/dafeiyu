@@ -1,0 +1,293 @@
+{
+  "name": "stretch",
+  "label": "伸懒腰",
+  "weight": 1,
+  "layer": "arms",
+  "facing": "front",
+  "duration": 3.5,
+  "fadeIn": 0.1,
+  "fadeOut": 0.3,
+  "stopWalk": true,
+  "tracks": {
+    "armL": {
+      "mode": "set",
+      "keys": [
+        [
+          0,
+          0,
+          "easeInOut"
+        ],
+        [
+          0.8,
+          1.55,
+          "easeInOut"
+        ],
+        [
+          1.4,
+          1.6,
+          "easeInOut"
+        ],
+        [
+          2.0,
+          1.52,
+          "easeInOut"
+        ],
+        [
+          2.6,
+          1.55,
+          "easeInOut"
+        ],
+        [
+          3.4,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "armR": {
+      "mode": "set",
+      "keys": [
+        [
+          0,
+          0,
+          "easeInOut"
+        ],
+        [
+          0.8,
+          1.55,
+          "easeInOut"
+        ],
+        [
+          1.4,
+          1.5,
+          "easeInOut"
+        ],
+        [
+          2.0,
+          1.58,
+          "easeInOut"
+        ],
+        [
+          2.6,
+          1.55,
+          "easeInOut"
+        ],
+        [
+          3.4,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "elbowL": {
+      "mode": "set",
+      "keys": [
+        [
+          0,
+          0,
+          "easeInOut"
+        ],
+        [
+          0.8,
+          0.75,
+          "linear"
+        ],
+        [
+          2.6,
+          0.75,
+          "easeInOut"
+        ],
+        [
+          3.4,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "elbowR": {
+      "mode": "set",
+      "keys": [
+        [
+          0,
+          0,
+          "easeInOut"
+        ],
+        [
+          0.8,
+          0.75,
+          "linear"
+        ],
+        [
+          2.6,
+          0.75,
+          "easeInOut"
+        ],
+        [
+          3.4,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "stretch": {
+      "mode": "add",
+      "keys": [
+        [
+          0,
+          0,
+          "easeInOut"
+        ],
+        [
+          0.9,
+          0.05,
+          "linear"
+        ],
+        [
+          2.6,
+          0.05,
+          "easeInOut"
+        ],
+        [
+          3.3,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "pitch": {
+      "mode": "add",
+      "keys": [
+        [
+          0,
+          0,
+          "easeInOut"
+        ],
+        [
+          0.9,
+          -0.08,
+          "linear"
+        ],
+        [
+          2.6,
+          -0.08,
+          "easeInOut"
+        ],
+        [
+          3.3,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "lean": {
+      "mode": "add",
+      "keys": [
+        [
+          0,
+          0,
+          "easeInOut"
+        ],
+        [
+          1.2,
+          0.02,
+          "easeInOut"
+        ],
+        [
+          1.8,
+          -0.02,
+          "easeInOut"
+        ],
+        [
+          2.4,
+          0.015,
+          "easeInOut"
+        ],
+        [
+          3.0,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "blink": {
+      "mode": "max",
+      "keys": [
+        [
+          0,
+          0,
+          "easeIn"
+        ],
+        [
+          0.6,
+          1,
+          "linear"
+        ],
+        [
+          2.7,
+          1,
+          "easeOut"
+        ],
+        [
+          3.0,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "mouth": {
+      "mode": "set",
+      "keys": [
+        [
+          0,
+          1,
+          "step"
+        ],
+        [
+          0.7,
+          2,
+          "step"
+        ],
+        [
+          2.6,
+          0,
+          "step"
+        ],
+        [
+          3.3,
+          1,
+          "step"
+        ],
+        [
+          3.5,
+          1,
+          "step"
+        ]
+      ]
+    },
+    "emote": {
+      "mode": "set",
+      "keys": [
+        [
+          0,
+          0,
+          "step"
+        ],
+        [
+          2.6,
+          4,
+          "step"
+        ],
+        [
+          3.3,
+          0,
+          "step"
+        ],
+        [
+          3.5,
+          0,
+          "step"
+        ]
+      ]
+    }
+  }
+}

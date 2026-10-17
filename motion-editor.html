@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>关键帧动作编辑器</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root { font: 13px/1.5 system-ui, "Microsoft YaHei", sans-serif; color: #30383e; background: #edf0f2; }
+    body { margin: 0; }
+    button, input, select { font: inherit; }
+    button, select, input[type="text"], input[type="number"] {
+      min-height: 29px; border: 1px solid #cbd2d8; border-radius: 4px; background: white; color: inherit;
+    }
+    button { padding: 3px 10px; cursor: pointer; }
+    button:hover { background: #edf4f8; }
+    button:disabled { opacity: .45; cursor: default; }
+    input[type="text"], input[type="number"] { padding: 3px 6px; min-width: 0; width: 100%; }
+    input[type="range"] { width: 100%; accent-color: #477c9d; }
+    input[type="checkbox"] { accent-color: #477c9d; }
+    select { max-width: 100%; padding: 3px; }
+    #app { height: 100dvh; display: grid; grid-template-columns: minmax(0, 1fr) 300px; grid-template-rows: minmax(180px, 1fr) 360px; }
+    #preview { position: relative; overflow: hidden; background: radial-gradient(ellipse, #fff, #e4e9ed); }
+    #preview canvas { display: block; width: 100%; height: 100%; }
+    #preview-note { position: absolute; left: 12px; top: 10px; color: #64717b; pointer-events: none; }
+    #properties { grid-column: 2; grid-row: 1 / 3; overflow: auto; padding: 12px; background: #fafbfc; border-left: 1px solid #cbd2d8; }
+    h2 { margin: 5px 0 10px; font-size: 14px; }
+    section { padding-bottom: 14px; margin-bottom: 14px; border-bottom: 1px solid #dce1e5; }
+    .field { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 6px; align-items: center; margin: 7px 0; }
+    .check { display: flex; align-items: center; gap: 4px; }
+    .track-property { display: grid; grid-template-columns: minmax(0, 1fr) 70px 32px; gap: 4px; margin: 5px 0; align-items: center; }
+    .track-property button:first-child { text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .active { background: #dcebf4 !important; }
+    .muted { color: #7d8992; font-size: 12px; }
+    #bottom { min-width: 0; border-top: 1px solid #cbd2d8; display: flex; flex-direction: column; background: #fff; }
+    #toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; padding: 7px; border-bottom: 1px solid #dce1e5; }
+    #motion-select { max-width: 200px; }
+    #timeline-scroll { flex: 1; min-height: 65px; overflow: auto; }
+    #timeline { display: block; touch-action: none; }
+    #curve { display: block; width: 100%; height: 135px; flex: 0 0 135px; border-top: 1px solid #dce1e5; touch-action: none; }
+    #status { min-height: 26px; padding: 3px 10px; border-top: 1px solid #dce1e5; color: #596a76; }
+    #status.error { color: #ad3535; }
+    #warning { color: #a36b20; margin: 7px 0; }
+    #bezier { width: 100%; height: 150px; display: block; background: #fff; border: 1px solid #dce1e5; touch-action: none; }
+    #time-label { font-variant-numeric: tabular-nums; min-width: 76px; }
+    dialog { border: 1px solid #cbd2d8; border-radius: 8px; width: 330px; padding: 20px; }
+    dialog::backdrop { background: #26344366; }
+    dialog label { display: block; margin: 10px 0; }
+    dialog menu { display: flex; justify-content: flex-end; gap: 8px; padding: 0; margin-bottom: 0; }
+    #name-error { min-height: 20px; color: #ad3535; }
+    @media (max-width: 760px) {
+      #app { grid-template-columns: minmax(0, 1fr) 260px; grid-template-rows: minmax(160px, 1fr) 430px; }
+    }
+  </style>
+</head>
+<body>
+  <main id="app">
+    <div id="preview"><div id="preview-note">正在加载角色…</div></div>
+    <aside id="properties"></aside>
+    <div id="bottom">
+      <div id="toolbar">
+        <select id="motion-select" aria-label="动作"></select>
+        <button id="new">新建</button>
+        <button id="save-as">另存为</button>
+        <button id="save">保存</button>
+        <button id="undo" title="Ctrl+Z">撤销</button>
+        <button id="redo" title="Ctrl+Y">重做</button>
+        <button id="home" title="回到开头">归零</button>
+        <button id="play" title="空格">播放</button>
+        <button id="release">松开</button>
+        <select id="speed" aria-label="播放速度">
+          <option value=".25">0.25×</option>
+          <option value=".5">0.5×</option>
+          <option value="1" selected>1×</option>
+        </select>
+        <label class="check"><input id="repeat" type="checkbox">循环播放</label>
+        <select id="facing" aria-label="预览朝向">
+          <option value="front">正面</option>
+          <option value="left">朝左</option>
+          <option value="right">朝右</option>
+          <option value="back">背面</option>
+        </select>
+        <label class="check"><input id="idle" type="checkbox" checked>叠加待机</label>
+        <span id="time-label">0.000 s</span>
+      </div>
+      <div id="timeline-scroll"><canvas id="timeline" aria-label="关键帧时间轴"></canvas></div>
+      <canvas id="curve" aria-label="选中轨道的曲线"></canvas>
+      <div id="status" role="status" aria-live="polite">就绪</div>
+    </div>
+  </main>
+
+  <dialog id="name-dialog">
+    <form id="name-form">
+      <h2 id="name-title">新建动作</h2>
+      <label>英文名<input id="new-name" required pattern="[a-z0-9_-]{1,40}" maxlength="40" autocomplete="off"></label>
+      <label id="label-field">中文名<input id="new-label" maxlength="100"></label>
+      <div id="name-error"></div>
+      <menu>
+        <button type="button" id="cancel-name">取消</button>
+        <button type="submit">确定</button>
+      </menu>
+    </form>
+  </dialog>
+  <script type="module" src="/src/puppet/editor.js"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+{
+  "name": "pet",
+  "label": "摸摸头",
+  "weight": 0,
+  "layer": "head",
+  "facing": "front",
+  "duration": 2.0,
+  "loop": [
+    0.3,
+    1.55
+  ],
+  "hold": 1.2,
+  "fadeIn": 0.15,
+  "fadeOut": 0.35,
+  "tracks": {
+    "blink": {
+      "mode": "max",
+      "keys": [
+        [
+          0,
+          0,
+          "easeOut"
+        ],
+        [
+          0.25,
+          1,
+          "linear"
+        ],
+        [
+          1.55,
+          1,
+          "easeInOut"
+        ],
+        [
+          2.0,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "happy": {
+      "mode": "set",
+      "keys": [
+        [
+          0,
+          1,
+          "linear"
+        ],
+        [
+          2.0,
+          1,
+          "linear"
+        ]
+      ]
+    },
+    "roll": {
+      "mode": "add",
+      "keys": [
+        [
+          0,
+          0,
+          "easeInOut"
+        ],
+        [
+          0.3,
+          0,
+          "easeInOut"
+        ],
+        [
+          0.61,
+          0.07,
+          "easeInOut"
+        ],
+        [
+          0.93,
+          0,
+          "easeInOut"
+        ],
+        [
+          1.24,
+          -0.07,
+          "easeInOut"
+        ],
+        [
+          1.55,
+          0,
+          "easeInOut"
+        ],
+        [
+          2.0,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "pitch": {
+      "mode": "add",
+      "keys": [
+        [
+          0,
+          0,
+          "easeOut"
+        ],
+        [
+          0.3,
+          0.04,
+          "linear"
+        ],
+        [
+          1.55,
+          0.04,
+          "easeInOut"
+        ],
+        [
+          2.0,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "bob": {
+      "mode": "add",
+      "keys": [
+        [
+          0,
+          0,
+          "linear"
+        ],
+        [
+          0.3,
+          0,
+          "easeInOut"
+        ],
+        [
+          0.61,
+          -3,
+          "easeInOut"
+        ],
+        [
+          0.93,
+          0,
+          "easeInOut"
+        ],
+        [
+          1.24,
+          -3,
+          "easeInOut"
+        ],
+        [
+          1.55,
+          0,
+          "linear"
+        ],
+        [
+          2.0,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "mouth": {
+      "mode": "set",
+      "keys": [
+        [
+          0,
+          5,
+          "step"
+        ],
+        [
+          2.0,
+          5,
+          "step"
+        ]
+      ]
+    },
+    "blush": {
+      "mode": "max",
+      "keys": [
+        [
+          0,
+          0,
+          "easeOut"
+        ],
+        [
+          0.35,
+          0.9,
+          "linear"
+        ],
+        [
+          1.55,
+          0.9,
+          "easeInOut"
+        ],
+        [
+          2.0,
+          0,
+          "linear"
+        ]
+      ]
+    },
+    "emote": {
+      "mode": "set",
+      "keys": [
+        [
+          0,
+          0,
+          "step"
+        ],
+        [
+          0.2,
+          5,
+          "step"
+        ],
+        [
+          1.8,
+          0,
+          "step"
+        ],
+        [
+          2.0,
+          0,
+          "step"
+        ]
+      ]
+    }
+  }
+}
